@@ -3,14 +3,7 @@ How to:
 Example:
 
     Open a terminal:
-        python Server.py 1025
-
-    Open another terminal:
-        python ClientLauncher.py 127.0.0.1 1025 5008 video.mjpeg
-
-
-
-
+        python Server.py 5900
 
 Start the server with the command line
 	
@@ -19,7 +12,7 @@ Start the server with the command line
 	Where server_port is the port your server listens to for incoming RTSP connections
 	    # 1025
 		# Standard RTSP port is 554 
-		# But need to choose a #port > 1024
+		# But need to choose a #port > 5900
 
 Open a new terminal
 
