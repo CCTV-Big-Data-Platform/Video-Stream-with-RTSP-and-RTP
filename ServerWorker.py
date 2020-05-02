@@ -45,8 +45,8 @@ class ServerWorker:
 		"""Process RTSP request sent from the client."""
 		# Get the request type
 		request = data.split('\n')
-		print("Data : ", data)
-		print "request : "
+		print("Data_R : ", data)
+		print "request_R : "
 		print request
 		line1 = request[0].split(' ')
 		requestType = line1[0]
