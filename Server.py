@@ -19,6 +19,7 @@ class Server:
 		while True:
 			clientInfo = {}
 			clientInfo['rtspSocket'] = rtspSocket.accept()   # this accept {SockID,tuple object},tuple object = {clinet_addr,intNum}!!!
+			print("Data : ", rtspSocket.accept())
 
 			ServerWorker(clientInfo).run()
 

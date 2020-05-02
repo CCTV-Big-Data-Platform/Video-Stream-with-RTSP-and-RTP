@@ -33,6 +33,7 @@ class ServerWorker:
 
 	def recvRtspRequest(self):
 		"""Receive RTSP request from the client."""
+		print("1")
 		connSocket = self.clientInfo['rtspSocket'][0]
 		while True:
 			data = connSocket.recv(256)  ###
@@ -44,6 +45,7 @@ class ServerWorker:
 		"""Process RTSP request sent from the client."""
 		# Get the request type
 		request = data.split('\n')
+		print("Data : ", data)
 		print "request : "
 		print request
 		line1 = request[0].split(' ')
