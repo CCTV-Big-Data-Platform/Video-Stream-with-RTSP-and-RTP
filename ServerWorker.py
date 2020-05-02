@@ -44,6 +44,7 @@ class ServerWorker:
 		"""Process RTSP request sent from the client."""
 		# Get the request type
 		request = data.split('\n')
+		#print "request : " + request
 		line1 = request[0].split(' ')
 		requestType = line1[0]
 		# Get the media file name
