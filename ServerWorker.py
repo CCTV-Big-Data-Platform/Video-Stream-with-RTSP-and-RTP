@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'Tibbers'
 
 import random, math
@@ -50,7 +51,7 @@ class ServerWorker:
 		print request
 		line1 = request[0].split(' ')
 
-		# request 유효성 체
+		# request 유효성 체크
 		# request 공백으로 잘랐을 때, request 타입 없으면 return
 		if line1.size() == 1: 
 			return
