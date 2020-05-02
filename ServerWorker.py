@@ -53,7 +53,7 @@ class ServerWorker:
 
 		# request 유효성 체크
 		# request 공백으로 잘랐을 때, request 타입 없으면 return
-		if line1.size() == 1: 
+		if len(line1) == 1:
 			return
 
 		requestType = line1[0]
